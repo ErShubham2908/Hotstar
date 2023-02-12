@@ -186,11 +186,11 @@ input{
 }
 .item_name{
     visibility: hidden;
-    transition: visibility 2s;
 }
 
 .item_name :hover{
     visibility: visible;
+    z-index: 3;
 }
 
 .item_image{
@@ -198,12 +198,10 @@ input{
     height: 200px;
     border-radius: 5px;
     padding-left: 25px;
-    transition: width 2s, height 2s ease-in-out;
+    transition: all 0.8s ease;
 }
 
-
 .item_image:hover{
-    width: 200px;
-    height: 240px;
-    overflow-block :scroll;
+    transform: scale(1.2);
+    border-radius: 20px;
 }
